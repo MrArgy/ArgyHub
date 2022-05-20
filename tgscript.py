@@ -45,7 +45,7 @@ else:
 print(Fore.RED + Style.BRIGHT +'''
 ▀█▀ █▀▀ █▀ █▀▀ █▀█ █ █▀█ ▀█▀   █▀█ █▄█
 ░█░ █▄█ ▄█ █▄▄ █▀▄ █ █▀▀ ░█░ ▄ █▀▀ ░█░''')
-print(Fore.WHITE + Style.BRIGHT +'''				v.0.0.1 BETA
+print(Fore.WHITE + Style.BRIGHT +'''				v.N-SERV
 ''')
 
 print(Fore.GREEN + Style.BRIGHT + ">>> инфа: ")
@@ -183,7 +183,7 @@ async def valentine(app, msg):
 	if heart2 >= 2:
 		sleep(5)
 		await msg.edit(msg.chat.id, f'''
-			author: @MrArgy''')
+			script author @MrArgy''')
 
 @app.on_message(filters.command("penis", prefixes=".") & filters.me)
 async def valentine(app, msg):
@@ -209,7 +209,7 @@ async def valentine(app, msg):
 			✅ Ваш пенис увеличен на {penis2} см!''')
 		sleep(5)
 		await msg.edit(f'''
-			author: @MrArgy''')
+			script author @MrArgy''')
 		
 	global number
 	number = number + 1
@@ -249,7 +249,7 @@ async def valentine(app, msg):
 			✅ Аккаунт успешно взломан!''')
 		sleep(0.5)
 		await msg.edit(f'''
-			hacked by @MrArgy''')
+			script author @MrArgy''')
 
 	global number
 	number = number + 1
@@ -277,7 +277,7 @@ async def valentine(app, msg):
 			✅ IP-адрес успешно найдён!''')
 		sleep(5)
 		await msg.edit(f'''
-			finded by @MrArgy''')
+			script author @MrArgy''')
 
 	global number
 	number = number + 1
