@@ -1,10 +1,3 @@
-#██╗░░████████╗░██████╗░░██████╗░█████╗░██████╗░██╗██████╗░████████╗░░░██████╗░██╗░░░██╗
-#╚██╗░╚══██╔══╝██╔════╝░██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝░░░██╔══██╗╚██╗░██╔╝
-#░╚██╗░░░██║░░░██║░░██╗░╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░░░░██████╔╝░╚████╔╝░
-#░██╔╝░░░██║░░░██║░░╚██╗░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░░░░██╔═══╝░░░╚██╔╝░░
-#██╔╝░░░░██║░░░╚██████╔╝██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██╗██║░░░░░░░░██║░░░
-#╚═╝░░░░░╚═╝░░░░╚═════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝╚═╝░░░░░░░░╚═╝░░░
-
 import random
 import pickle
 import asyncio
@@ -43,14 +36,18 @@ else:
 	os.system("clear")
 
 print(Fore.RED + Style.BRIGHT +'''
-▀█▀ █▀▀ █▀ █▀▀ █▀█ █ █▀█ ▀█▀   █▀█ █▄█
-░█░ █▄█ ▄█ █▄▄ █▀▄ █ █▀▀ ░█░ ▄ █▀▀ ░█░''')
-print(Fore.WHITE + Style.BRIGHT +'''				v.N-SERV
+█▀█ █▀█ █▀█ ▀▄▀  █▄█ █ █ █▀▄
+█▀█ █▀▄ █▄▄ ░█░  █ █ █▄█ █▀▄
+                            ▀▀''')
+print(Fore.WHITE + Style.BRIGHT +'''				v.0.5
 ''')
 
 print(Fore.GREEN + Style.BRIGHT + ">>> инфа: ")
 print(Fore.YELLOW + Style.BRIGHT +"напишите в любой телеграм чат команду -help, \nдля просмотра всех команд!")
 print("\nавтор -\nTelegram: @MrArgy или @ArgyDevBOT\nу меня есть еще ютуб канал и гитхаб аккаунт но ссылку на них я оставлю позже\n")
+print("")
+print(Fore.RED + Style.BRIGHT + "ИСПОЛЬЗУЙТЕ СКРИПТ НА СВОЙ СТРАХ И РИСК!!!")
+print(Fore.RED + Style.BRIGHT + "использование некоторых команд может засрать логи, что последственно можно получить бан/мут и разрушенные нервные клетки админа.")
 
 print(Fore.GREEN + Style.BRIGHT + ">> текущая скорость: ")
 cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
@@ -60,26 +57,26 @@ number = 0
 
 while cool == 0:
 	print(Fore.RED + Style.BRIGHT +"слишком быстро")
-	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (Норма 8): "))
+	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
 while cool == 1:
 	print(Fore.RED + Style.BRIGHT +"слишком быстро")
-	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (Норма 8): "))
+	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
 while cool == 2:
 	print(Fore.RED + Style.BRIGHT +"слишком быстро")
-	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (Норма 8): "))
+	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
 while cool >= 11:
 	print(Fore.RED + Style.BRIGHT +"too slow ahahahahahahahahahahaha")
-	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (Норма 8): "))
+	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
 while cool < 0:
 	print(Fore.RED + Style.BRIGHT +"хуя такая скорость, выбери по меньше")
-	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (Норма 8): "))
+	cool = int(input(Fore.WHITE + Style.RESET_ALL + "<*> введите скорость от 3 до 10 (дефолт 8): "))
 
-print(Fore.GREEN + Style.BRIGHT + "скрипт теперь работает")
-print(Fore.WHITE + Style.RESET_ALL + "напишите в любой чат в тг -help \nно эта команда не работает на закрытых чатах")
+print(Fore.GREEN + Style.BRIGHT + "скрипт запущен!")
+print(Fore.WHITE + Style.RESET_ALL + "напишите в любой чат в тг -help")
 
 
 @app.on_message(filters.command("gifspam", prefixes=".") & filters.me)
